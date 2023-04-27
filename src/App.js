@@ -1,18 +1,17 @@
-
-function Heading() {
-  return (
-    <h1>This is a H1 geading</h1>
-  );
-}
-
+import  Home from  './pages/Home.js';
+import Services from './pages/Services.js';
+import {BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return ( 
-    <div className="App"> 
-      This is the starting code for "Your first component" ungraded lab 
-      <Heading /> 
-    </div> 
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+  </BrowserRouter>
+
   ); 
 } 
- 
+
 export default App;
