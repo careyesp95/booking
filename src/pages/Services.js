@@ -1,6 +1,12 @@
+import Navbar from '../components/Navbar.js';
+
 function Services(){
     return (
-        <h1>soy services</h1>
+        <>
+            <Navbar />
+
+        </>
+        
     )
 
 
